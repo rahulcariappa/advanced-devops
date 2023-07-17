@@ -15,19 +15,21 @@ git fetch origin master
 
 git reset --hard origin/master
 
-# Usage: be sure to execute the source commands below in the repo directory
+# Usage: Be sure to execute the source commands below in the repo directory
 
-# For Linux based machines 
+## For Linux based machines 
 source vagrantenv/bin/activate # Source the virtual envrionment within this repo
 
-# For Windows
+## For Windows
 source vagrantenv/Scripts/activate.bat
 
-# Make - to begin the Development vagrant instance
+# Setup - to instantiate the Development Vagrant instance in your local machine
 make setup
 
-# To kill the Vagrant Instance and perform cleanup
+# Clean - to destroy the Development Vagrant instance in your local machine
 make clean
 
-# If you cannot find the vagrantenv file, it might be found in .gitignore folder
-python3 redis-server.py --redis_repo_path "/your/path/redis-repo"
+# To kick start the instantiation of the Development Vagrant instance in your local machine
+python redis-server.py --redis_repo_path "/your/path/redis-repo"
+
+Note: If you cannot find the vagrantenv file, it might be found in .gitignore folder
