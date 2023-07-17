@@ -23,13 +23,13 @@ source vagrantenv/bin/activate # Source the virtual envrionment within this repo
 ## For Windows
 source vagrantenv/Scripts/activate.bat
 
-# Setup - to instantiate the Development Vagrant instance in your local machine
+# Setup - to instantiate the Development Vagrant instance in your local machine, you can just call 'make' too
 make setup
 
 # Clean - to destroy the Development Vagrant instance in your local machine
 make clean
 
-# To kick start the instantiation of the Development Vagrant instance in your local machine
+# To kick start the instantiation of the Development Vagrant instance in your local machine in case make fails
 python redis-server.py --redis_repo_path "/your/path/redis-repo"
 
 Note: If you cannot find the vagrantenv file, it might be found in .gitignore folder
