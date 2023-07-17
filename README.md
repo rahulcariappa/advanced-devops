@@ -12,7 +12,10 @@ cd advanced-devops
 git branch master
 
 git checkout master
-git pull origin master
+
+git fetch origin master
+
+git reset --hard origin/master
 
 # Usage:
 # For Linux
