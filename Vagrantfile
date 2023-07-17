@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
     vb.gui = true
   end
 
-  config.vm.synced_folder "/Users/rcheyand/AdvDevOps/advanced-devops/", "/home/vagrant", disabled: true
+  config.vm.synced_folder "/Users/rcheyand/AdvDevOps/advanced-devops/", "/home/vagrant", disabled: false
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
