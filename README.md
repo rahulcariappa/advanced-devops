@@ -15,4 +15,9 @@ git checkout master
 git pull origin master
 
 # Usage:
+# For Linux
+source vagrantenv/bin/activate # Source the virtual envrionment within this repo
+# For Windows
+source vagrantenv/Scripts/activate.bat
+# If you cannot find the vagrantenv file, it might be found in .gitignore folder
 python3 redis-server.py --redis_repo_path "/your/path/redis-repo"

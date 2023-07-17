@@ -1,11 +1,18 @@
-#!/usr/bin/env python3
+#!/usr/local/bin/python
 import argparse
 from pip._vendor.requests.compat import str
 import os
+import vagrant
 
+vagrantfile = os.path.join(os.getcwd(), "Vagrantfile")
 
 def vagrant_up(redis_repo=""):
     os.system("vagrant up")
+    return
+
+def launch_vagrant_instance():
+    vagrant_instance = vagrant.Vagrant(vagrantfile)
+    vagrant_instance.up()
     pass
 
 if __name__ == '__main__':
