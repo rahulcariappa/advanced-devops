@@ -1,8 +1,8 @@
 #!/usr/local/bin/python
 import argparse
-from pip._vendor.requests.compat import str
 import os
-import vagrant
+from pip._vendor.requests.compat import str
+# import vagrant
 
 vagrantfile = os.path.join(os.getcwd(), "Vagrantfile")
 

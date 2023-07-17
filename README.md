@@ -22,5 +22,9 @@ git reset --hard origin/master
 source vagrantenv/bin/activate # Source the virtual envrionment within this repo
 # For Windows
 source vagrantenv/Scripts/activate.bat
+# Make - to begin the Development vagrant instance
+make setup
+# To kill the Vagrant Instance and perform cleanup
+make clean
 # If you cannot find the vagrantenv file, it might be found in .gitignore folder
 python3 redis-server.py --redis_repo_path "/your/path/redis-repo"
