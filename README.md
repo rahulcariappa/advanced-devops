@@ -32,10 +32,10 @@ make clean
 # To kick start the instantiation of the Development Vagrant instance in your local machine in case make fails
 python redis-server.py --redis_repo_path "/your/path/redis-repo"
 
-# Commands that are helpful
-vagrant ssh redisdev - to SSH into the redisdev instance
-vagrant global-status - to view the list of instances running
-vagrant destroy id - to destroy the instance, id available in the output of command: vagrant global-status
-redis-cli -h 127.0.0.1 -p 9001  - to connect to the redis server from your host with port 9001 acting as port forwarding to the redisdev instance
+# Commands that are helpful:
+vagrant ssh redisdev - to SSH into the redisdev instance;
+vagrant global-status - to view the list of instances running;
+vagrant destroy id - to destroy the instance, id available in the output of command: vagrant global-status;
+redis-cli -h 127.0.0.1 -p 9001  - to connect to the redis server from your host with port 9001 acting as port forwarding to the redisdev instance;
 
 Note: If you cannot find the vagrantenv file, it might be found in .gitignore folder
